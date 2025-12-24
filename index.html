@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dabbas Fashion | Luxury Bridal Veils</title>
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Dabbas Fashion | Luxury Bridal Veils">
+  <meta name="description"
+    content="Handcrafted luxury bridal veils designed to complement your dress and shine on your special day.">
+
+  <!-- Open Graph / WhatsApp / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dabbas Fashion | Luxury Bridal Veils">
+  <meta property="og:description" content="Handcrafted wedding veils designed to complement your dress and shine on your special day.">
+  <meta property="og:image" content="https://dabbasfashion.vercel.app/meta.jpg">
+  <meta property="og:url" content="https://dabbasfashion.vercel.app/">
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+  <div class="sidebar" id="sidebar">
+    <div style="text-align: right; margin-bottom: 40px; cursor: pointer;" onclick="toggleSidebar()">
+      <i class="fas fa-times" style="font-size: 1.5rem;"></i>
+    </div>
+
+    <ul>
+      <li><a href="#home" onclick="toggleSidebar()" data-key="home">Home</a></li>
+      <li><a href="#about" onclick="toggleSidebar()" data-key="about">About</a></li>
+      <li><a href="#services" onclick="toggleSidebar()" data-key="services">Services</a></li>
+      <li><a href="#veils" onclick="toggleSidebar()" data-key="veils">Veils</a></li>
+      <!-- <li><a href="#accessories" onclick="toggleSidebar()" data-key="acc_title">Accessories</a></li> -->
+      <li><a href="#contact" onclick="toggleSidebar()" data-key="contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <nav id="navbar">
+    <div class="logo" data-lang="en">Dabbas Fashion</div>
+    <div class="logo" data-lang="ar" style="display:none;">أزياء دباس</div>
+
+    <ul class="nav-links">
+      <li><a href="#home" data-key="home">Home</a></li>
+      <li><a href="#about" data-key="about">About</a></li>
+      <li><a href="#services" data-key="services">Services</a></li>
+      <li><a href="#veils" data-key="veils">Veils</a></li>
+      <!-- <li><a href="#accessories" data-key="acc_title">Accessories</a></li> -->
+      <li><a href="#contact" data-key="contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="lang-btn" onclick="toggleLanguage()">AR</button>
+      <div class="menu-toggle" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="hero.webp" alt="Luxury bridal veil craftsmanship" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-content reveal">
+        <span class="section-subtitle" data-key="Est">Est. 1990</span>
+        <h1 data-key="hero_title">Elegance Woven<br><span class="italic">in Every Thread</span></h1>
+        <p class="hero-description" data-key="hero_sub">
+          Handmade wedding veils to complement your dress and brighten your special day </p>
+        <div class="hero-actions">
+          <a href="#veils" class="cta-btn" data-key="cta_btn">Discover Collection</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-bar delay-300" id="stats-section">
+      <div class="stat-item">
+        <span class="stat-number" data-target="35">35+</span>
+        <span class="stat-label" data-key="stat_exp">Years Experience</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="5000">5000+</span>
+        <span class="stat-label" data-key="stat_prod">Happy Bride</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="100">100%</span>
+        <span class="stat-label" data-key="stat_qual">Handmade</span>
+      </div>
+    </div>
+
+    <div class="scroll-indicator"></div>
+  </section>
+
+  <section id="about">
+    <span class="section-subtitle" data-key="about_sub">Our Heritage</span>
+    <h2 class="section-title" data-key="about_title">The Art of Detail</h2>
+
+    <div class="about-container">
+      <div class="about-text reveal">
+        <h3 data-key="about_head">From Damascus to the World</h3>
+
+        <p data-key="about_p1">
+          Dabbas Fashion represents the pinnacle of bridal craftsmanship. Every veil tells a story of tradition, woven
+          with modern aesthetics to create something truly timeless.
+        </p>
+
+        <p data-key="about_p2">
+          From the initial sketch to the final lace embroidery, our process is 100% handmade, ensuring that your walk
+          down the aisle is accompanied by a masterpiece tailored just for you.
+        </p>
+      </div>
+
+      <div class="about-img reveal delay-200">
+        <img src="s1.webp" alt="Handmade Embroidery">
+      </div>
+    </div>
+
+    <!-- WHY DABBAS -->
+    <div class="why-dabbas reveal">
+      <h4 data-key="why_title">Why Dabbas Fashion</h4>
+
+      <div class="why-cards">
+        <div class="why-card">
+          <i class="fas fa-award"></i>
+          <span data-key="why_1">Over 35 years of bridal couture experience</span>
+        </div>
+
+        <div class="why-card">
+          <i class="fas fa-gem"></i>
+          <span data-key="why_2">Exceptional craftsmanship with precise execution</span>
+        </div>
+
+        <div class="why-card">
+          <i class="fas fa-check-circle"></i>
+          <span data-key="why_3">Consistent premium quality in every piece</span>
+        </div>
+
+        <div class="why-card">
+          <i class="fas fa-layer-group"></i>
+          <span data-key="why_4">Integrated design, tailoring, and embroidery under one roof</span>
+        </div>
+
+        <div class="why-card">
+          <i class="fas fa-heart"></i>
+          <span data-key="why_5">Custom-made veils tailored for each bride</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services-bg">
+    <span class="section-subtitle" data-key="serv_sub">What We Do</span>
+    <h2 class="section-title" data-key="serv_title">Bespoke Services</h2>
+
+    <div class="services-grid-container">
+
+      <div class="service-card big-left reveal">
+        <img src="s1.webp" alt="Bridal Veils">
+        <div class="service-content">
+          <i class="fas fa-crown service-icon"></i>
+          <h3 data-key="serv_1_t" style="font-size: 2rem; margin-bottom: 10px; color: #fff ;">Bridal Veils</h3>
+          <p data-key="serv_1_d">Exquisite long and short veils French lace and crystal embellishments.</p>
+        </div>
+      </div>
+
+      <!-- <div class="service-card reveal delay-100">
+        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338" alt="Bridal Accessories">
+        <div class="service-content">
+          <i class="fas fa-pencil-ruler service-icon"></i>
+          <h4 data-key="serv_3_t" style="font-size: 2rem; margin-bottom: 10px; color: #fff ;">Bridal Accessories</h4>
+          <p data-key="serv_3_d">Refined finishing touches designed to elevate every bridal look with timeless elegance.</p>
+        </div>
+      </div> -->
+
+      <div class="service-card reveal delay-100">
+        <img src="design.webp" alt="Custom Bridal Veil">
+        <div class="service-content">
+          <i class="fas fa-pencil-ruler service-icon"></i>
+          <h4 data-key="serv_3_t" style="font-size: 2rem; margin-bottom: 10px; color: #fff;">Custom Bridal Veils</h4>
+          <p data-key="serv_3_d">We craft your veil to perfectly match your dress and personality, ensuring it shines
+            with you on your special day.</p>
+        </div>
+      </div>
+
+
+      <div class="service-card reveal delay-200">
+        <img src="handmade.webp" alt="Handwork">
+        <div class="service-content">
+          <i class="fas fa-hands service-icon"></i>
+          <h4 data-key="serv_4_t" style="font-size: 2rem; margin-bottom: 10px; color: #fff ;">Embroidery</h4>
+          <p data-key="serv_4_d">Intricate artisanal handwork and finishing.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="veils">
+    <span class="section-subtitle" data-key="veil_sub">Collection</span>
+    <h2 class="section-title" data-key="veil_title">Curated Pieces</h2>
+
+    <div class="veils-grid">
+      <div class="product-card reveal">
+        <div class="product-image-box">
+          <img src="v001.webp" alt="The Classic Pearl Veil">
+        </div>
+        <div class="product-details">
+          <h3 data-key="prod_1">The Classic Pearl Veil</h3>
+          <div class="product-price" data-key="prod_1_info">A statement bridal veil adorned with hand-beaded pearls,
+            creating a graceful architectural elegance inspired by timeless craftsmanship.</div>
+        </div>
+      </div>
+
+      <div class="product-card reveal delay-100">
+        <div class="product-image-box">
+          <img src="v002.webp" alt="The Floral Veil">
+        </div>
+        <div class="product-details">
+          <h3 data-key="prod_2">The Floral Veil</h3>
+          <div class="product-price" data-key="prod_2_info">A long veil featuring handcrafted flowers, designed to add a
+            touch of luxury.</div>
+        </div>
+      </div>
+
+      <div class="product-card reveal delay-200">
+        <div class="product-image-box">
+          <img src="v003.webp" alt="The Royal Lace Veil">
+        </div>
+        <div class="product-details">
+          <h3 data-key="prod_3">The Royal Lace Veil</h3>
+          <div class="product-price" data-key="prod_3_info">A luxurious soft tulle veil with a wide lace border and
+            delicate eyelash edges, exuding elegance offering a sophisticated and royal look for the modern bride</div>
+        </div>
+      </div>
+
+      <div class="product-card reveal delay-200">
+        <div class="product-image-box">
+          <img src="v004.webp" alt="">
+        </div>
+        <div class="product-details">
+          <h3 data-key="prod_4">The Veined Silan Veil</h3>
+          <div class="product-price" data-key="prod_4_info">Ceylon veil is enchanting, with beaded embroidery on the
+            edges and delicate floral veins adorning the border, giving the bride a dreamy and luxurious look that
+            steals the show.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="accessories" class="services-bg">
+    <span class="section-subtitle" data-key="acc_sub">Details</span>
+    <h2 class="section-title" data-key="acc_title">Bridal Accessories</h2>
+
+    <div class="masonry-wrapper">
+      <div class="masonry-item acc-item item-tall reveal">
+        <img src="https://i.pinimg.com/1200x/c0/c1/0f/c0c10f8b22f00223d9e64b9fa1d5d93d.jpg" alt="Headpiece">
+        <div class="acc-overlay">
+          <h3 data-key="acc_1">Pearl Headpiece</h3>
+        </div>
+      </div>
+
+      <div class="masonry-item acc-item item-wide reveal delay-100">
+        <img src="https://i.pinimg.com/736x/e3/5d/40/e35d4078514395142ea97e1e1f51464c.jpg" alt="Gloves">
+        <div class="acc-overlay">
+          <h3 data-key="acc_2">Silk & Lace Gloves</h3>
+        </div>
+      </div>
+
+      <div class="masonry-item acc-item reveal delay-300">
+        <img src="https://i.pinimg.com/736x/28/4e/1a/284e1a33c2e1812d6a4a782ac1c12e57.jpg" alt="Shoes">
+        <div class="acc-overlay">
+          <h3>Bridal Shoes</h3>
+        </div>
+      </div>
+
+      <div class="masonry-item acc-item reveal delay-200">
+        <img src="https://i.pinimg.com/736x/7a/33/85/7a33852b38c489c7440f4300eb8ec083.jpg" alt="Detail">
+        <div class="acc-overlay">
+          <h3>Crystal Belt</h3>
+        </div>
+      </div>
+
+      <div class="masonry-item acc-item item-wide reveal delay-100">
+        <img src="https://i.pinimg.com/1200x/b7/25/b4/b725b499a3f0be39040dd4320dab3222.jpg" alt="Gloves">
+        <div class="acc-overlay">
+          <h3 data-key="acc_2">Silk & Lace Gloves</h3>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="contact" class="contact-section">
+    <div class="contact-container reveal">
+
+      <span class="section-subtitle" data-key="cont_sub" style="display:block; text-align:center;">
+        Inquiries
+      </span>
+
+      <h2 class="section-title" data-key="cont_title" style="text-align:center; color:white;">
+        Start Your Journey
+      </h2>
+
+      <p data-key="cont_desc" style="text-align:center; color:#aaa; font-style:italic; margin-bottom:40px;">
+        Consult with our designers to craft your perfect bridal masterpiece.
+      </p>
+
+      <form class="contact-form" id="whatsappForm">
+
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" data-key-placeholder="cont_name" placeholder="FULL NAME"
+              required>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" class="form-control" id="phone" data-key-placeholder="cont_phone"
+              placeholder="PHONE NUMBER" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <textarea class="form-control" id="message" rows="4" data-key-placeholder="cont_msg"
+            placeholder="DESCRIBE YOUR VISION" required></textarea>
+        </div>
+
+        <div style="text-align:center;">
+          <button type="submit" class="submit-btn" data-key="cont_btn">
+            Connect on WhatsApp
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-logo">Dabbas Fashion</div>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/fashiondabbas" target="_blank" rel="noopener">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/963933530813?text=Hello%20Dabbas%20Fashion%2C%20I%20would%20love%20to%20inquire%20about%20bridal%20veils."
+        target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+
+    </div>
+    <div class="copyright">
+      &copy; 2026 Dabbas Fashion. Handmade in Damascus.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
