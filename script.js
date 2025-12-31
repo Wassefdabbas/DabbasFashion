@@ -15,7 +15,7 @@ function toggleSidebar() {
 // --- LANGUAGE DATA ---
 const translations = {
   en: {
-    home: "Home", about: "About", services: "Services", veils: "Collection", contact: "Contact",
+    home: "Home", about: "About", services: "Services", veils: "Collection", contact: "Contact", accessories: "Accessories",
     Est: "Est. 1990",
     hero_title: "Elegance Woven in Every Thread",
     hero_sub: "Handmade wedding veils to complement your dress and brighten your special day",
@@ -57,7 +57,7 @@ const translations = {
 
   },
   ar: {
-    home: "الرئيسية", about: "من نحن", services: "خدماتنا", veils: "المجموعة", contact: "تواصل معنا",
+    home: "الرئيسية", about: "من نحن", services: "خدماتنا", veils: "المجموعة", contact: "تواصل معنا", accessories: "الإكسسوارات",
     Est: "تأسست 1990",
     hero_title: "أناقة منسوجة في كل خيط",
     hero_sub: "طرحات زفاف مصنوعة يدوياً لتناسب فستانك وتضيء يومك الخاص",
